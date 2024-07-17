@@ -3,7 +3,7 @@ document.getElementById("Submit").addEventListener("click", function () {
     const password = document.getElementById("Pass").value;
       
 
-    if (username === "  " && password === "123") {
+    if (username === "YP" && password === "123") {
       alert("Login successful!");
     } else {
       alert("Login failed. Please check your credentials.");

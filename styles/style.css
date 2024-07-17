@@ -1,0 +1,46 @@
+html{
+  font-family: "Kalnia Glaze", serif;
+  font-optical-sizing: auto;
+  font-weight: 100px;
+  font-style: normal;
+  font-variation-settings:"wdth" 100;
+  background-color:beige;
+}
+
+img{
+  width: 100px;
+  align-items: center;
+  margin: auto 43%;  
+  /* top-bottom left-right */
+  /* top right bottom  left*/
+}
+
+h1{
+  text-align: center;
+}
+
+p:hover{
+  color: red;
+  font-size: 25px;
+}
+
+#Name{
+  margin-left: 100px;
+}
+
+#Pass{
+  margin-left: 70px;
+}
+
+div{
+  padding-bottom: 15px;
+}
+
+button{
+  margin-top: 10px;
+  margin-left: 25%;
+  color: blueviolet;
+  background-color: aqua;
+  border-radius: 75%;
+  cursor: pointer;
+}

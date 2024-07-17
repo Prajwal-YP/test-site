@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+
+    <link rel="stylesheet" href="styles/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kalnia+Glaze:wght@100..700&display=swap" rel="stylesheet">
+    <script src="scripts/script.js"></script>
+
+
+    <title>My test page</title>
+  </head>
+  <body>
+    <h1>LOGIN</h1>
+
+    <img src="images/smily-face.png" alt="A yellow smily face">
+
+    <div>
+      <label for="Name">Name:</label>
+      <input type="text" name="Name" id="Name">
+    </div>
+    
+    <div>
+      <label for="pass">Password:</label>
+      <input type="password" name="Pass" id="Pass">
+    </div>
+
+    <button id="Reset">Reset</button>
+    <button id="Submit">Submit</button>
+
+    <p id="demo"></p>
+    <script>
+      document.getElementById("Submit").addEventListener("click", function () {
+        const username = document.getElementById("Name").value;
+        const password = document.getElementById("Pass").value;
+         
+
+        if (username === "  " && password === "123") {
+          alert("Login successful!");
+        } else {
+          alert("Login failed. Please check your credentials.");
+        }
+      });
+    </script>
+  </body>
+</html>

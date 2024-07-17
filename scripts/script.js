@@ -9,3 +9,8 @@ document.getElementById("Submit").addEventListener("click", function () {
       alert("Login failed. Please check your credentials.");
     }
   });
+
+  document.getElementById("Reset").addEventListener("click", function () {
+    document.getElementById("Name").value='';
+    document.getElementById("Pass").value='';
+  });

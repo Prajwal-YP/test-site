@@ -1,7 +1,12 @@
 
-let Submit= document.getElementsById("Submit")
+document.getElementById("Submit").addEventListener("click", function () {
+    const username = document.getElementById("Name").value;
+    const password = document.getElementById("Pass").value;
+     
 
-
-Submit.onclick = function(){
-    alert('hi')
-}
+    if (username === "  " && password === "123") {
+      alert("Login successful!");
+    } else {
+      alert("Login failed. Please check your credentials.");
+    }
+  });

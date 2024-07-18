@@ -1,0 +1,52 @@
+html{
+    background-image: url(../images/backgroup-image.gif)  ;
+    background-size: cover;
+}
+
+h1{
+    font-size: 60px;
+    color: white;
+    text-align: center;
+    text-shadow: 7px 7px 7px blue;
+}
+
+label{
+    font-size: 30px;
+    color: white;
+    text-shadow: 5px 5px 5px blue;
+}
+
+#nameLabel{
+    margin-right: 120px;
+}
+
+#passLabel{
+    margin-right: 133px;
+}
+
+#pass1Label{
+    margin-right: 1.5%;
+}
+
+input{
+    margin-bottom: 10px;
+}
+
+button{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 20px;
+    border-radius: 10px;
+    margin-left: 250px;
+    margin-top: 10px;
+    color: azure;
+    background-color: aqua;
+}
+
+button:hover{
+    margin-left: 250px;
+    /* margin-left: 23.5%; */
+    margin-top: 10px;
+    color: aqua;
+    background-color: azure;
+}

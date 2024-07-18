@@ -6,7 +6,7 @@ document.getElementById("Submit").addEventListener("click", function () {
 
     if (username === "YP" && password === "123") {
         alert("Login successful!");
-    } else {
+    } else {    
         alert("Login failed. Please check your credentials.");
     }
 });

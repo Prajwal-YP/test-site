@@ -16,6 +16,10 @@ document.getElementById("Submit").addEventListener('click',function() {
     }else if(error==-2){
         alert('Passwords does not match');
     }else{
-
+        var query= "EXEC CreateUser @UserName='"+UserName+"', @UserPassword='"+Password+"';"
+        fetch(`http://localhost:5000/execQuery?query=${encodeURIComponent(query)}`)
+        alert(query);
+        console.log(`http://localhost:5000/execQuery?query=${encodeURIComponent(query)}`)
     }
+
 });

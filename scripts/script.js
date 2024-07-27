@@ -4,6 +4,9 @@ document.getElementById("Submit").addEventListener("click", function () {
     const password = document.getElementById("Pass").value;
 
 
+    
+
+
     if (username === "YP" && password === "123") {
         alert("Login successful!");
     } else {    

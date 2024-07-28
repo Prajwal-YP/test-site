@@ -11,21 +11,86 @@
 <body>
     <h1>Sign-Up</h1>
     
+    <div id="mainPage">
+        <table id="mainPageTbl">
+            <tr class='mainPageRow'>
+                <td>
+                    <label for="name"   id="nameLabel">UserName</label>
+                </td>
+                <td>
+                    <div class="ipDiv">
+                        <input type="text" name="name" id="name" placeholder="Your Name...">
+                    </div>
+                </td>
+            </tr>
+            <tr class='mainPageRow'>
+                <td>
+                    <label for="pass" id="passLabel">Password</label>
+                </td>
+                <td>
+                    <div class="ipDiv">
+                        <input type="password" name="pass" id="pass" placeholder="Your Password...">
+                    </div>
+                </td>
+            </tr>
+            <tr class='mainPageRow'>
+                <td>
+                    <label for="pass1" id="pass1Label">Re Enter Password</label>
+                </td>
+                <td>
+                    <div class="ipDiv">
+                        <input type="password" name="pass1" id="pass1">
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button id="Submit">Submit</button>
+                </td>
+            </tr>
+        </table>
+    
+    </div>
+
+    
+
+  <div id="cabContain">
+      <div id="customAlertBox">
+          <div id="cabMove">
+              <table>
+                  <tr>
+                      <th>
+                          <b>&emsp;Warning !!!</b>
+                      </th>
+                  </tr>
+                  <tr>
+                      <td>
+                          <p id="alrtMsg">
+                              
+                          </p>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>
+                          <div class="btnHolder">
+                              <div class="BtnBorder">
+                                  <button class="btn" id="Alertbtn">
+                                      Okay
+                                  </button>
+                              </div>
+                          </div>
+                      </td>
+                  </tr>
+              </table>
+          </div>
+          <p></p>
+          <br>
+          <p></p>
+          <br>
+      </div>
+  </div>
 
 
-    <label for="name" id="nameLabel">UserName</label>
-    <input type="text" name="name" id="name">
-    <br>
-
-    <label for="pass" id="passLabel">Password</label>
-    <input type="password" name="pass" id="pass">
-    <br>
-
-    <label for="pass1" id="pass1Label">Re Enter Password</label>
-    <input type="password" name="pass1" id="pass1">
-    <br>
-
-    <button id="Submit">Submit</button>
 
     <script src="scripts/sign-up-page.js" ></script>
 

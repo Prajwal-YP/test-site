@@ -32,21 +32,184 @@ input{
     margin-bottom: 10px;
 }
 
-button{
-    padding-top: 5px;
-    padding-bottom: 5px;
+#Submit{
+    padding: 6px;
     font-size: 20px;
     border-radius: 10px;
-    margin-left: 250px;
-    margin-top: 10px;
     color: azure;
     background-color: aqua;
 }
 
-button:hover{
-    margin-left: 250px;
-    /* margin-left: 23.5%; */
-    margin-top: 10px;
+#Submit:hover{
+    padding: 7px 10px;
     color: aqua;
     background-color: azure;
+    font-family:cursive;
+    transition: all .6s;
+}
+
+:root{
+    --increment: 100deg
+}
+
+#cabContain{
+    position: absolute;
+    z-index: 9;
+    display:none;
+    justify-content: center;
+    background: linear-gradient(var(--increment,--increment+100deg),rgb(160, 31, 31),rgb(218, 200, 12),rgb(176, 4, 176),blue);;
+    padding: 5px;
+    height: auto;
+    width: auto;
+    animation: move infinite alternate 1.5s ease-in-out;
+}
+
+@keyframes move{
+    0%{
+        background: linear-gradient(0deg,rgb(160, 31, 31),rgb(218, 200, 12),rgb(176, 4, 176),blue);;
+    }
+    14.5%{
+        background: linear-gradient(30deg,rgb(160, 31, 31),rgb(218, 200, 12),rgb(176, 4, 176),blue);;
+    }
+    29%{
+        background: linear-gradient(60deg,rgb(160, 31, 31),rgb(218, 200, 12),rgb(176, 4, 176),blue);;
+    }
+    43.5%{
+        background: linear-gradient(90deg,rgb(160, 31, 31),rgb(218, 200, 12),rgb(176, 4, 176),blue);;
+    }
+    58%{
+        background: linear-gradient(120deg,rgb(160, 31, 31),rgb(218, 200, 12),rgb(176, 4, 176),blue);;
+    }
+    72.5%{
+        background: linear-gradient(150deg,rgb(160, 31, 31),rgb(218, 200, 12),rgb(176, 4, 176),blue);;
+    }
+    87%{
+        background: linear-gradient(180deg,rgb(160, 31, 31),rgb(218, 200, 12),rgb(176, 4, 176),blue);;
+    }
+    
+}
+
+
+#customAlertBox{
+    display: flex;
+    height: auto;
+    width: auto;
+    border: 5px solid transparent;
+    background-color: rgb(189, 183, 183);
+    padding: 15px;
+}
+#alrtMsg{
+    width: max-content;
+}
+th{
+    color: rgb(30, 30, 228);
+    font-size: 21px;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    font-family: monospace;
+}
+
+th{
+    border-bottom: 2px solid black;
+    width:350px;
+    text-align: left;
+}
+
+
+.btnHolder{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    margin-right: 10%;
+}
+
+.BtnBorder{
+    background: linear-gradient(115deg,rgb(137, 5, 5),rgb(232, 150, 17),rgb(70, 13, 202),rgb(1, 117, 212));
+    padding: 3px;
+    border-radius: 15px;
+}
+
+.btn{
+    font-size: 16px;
+    font-family:sans-serif;
+    color: rgb(205, 202, 202);
+    background-color: black;
+    text-shadow: darkslategray;
+    border: 0px;
+    border-radius: 15px;
+    padding: 2px;
+}
+
+.BtnBorder:hover{
+    background: linear-gradient(205deg,rgb(137, 5, 5),rgb(232, 150, 17),rgb(90, 26, 240),rgb(142, 241, 3));
+    padding: 4px;
+    transition: all .6s;
+}
+
+.BtnBorder:hover .btn{
+    font-size: 18px;
+    font-family:sans-serif;
+    color: rgb(255, 255, 255);
+    background-color: black;
+    text-shadow: whitesmoke .1px .1px .1px;
+    text-decoration-line: underline;
+    text-decoration-color: antiquewhite;
+    text-decoration-thickness: 2px;
+    text-decoration-skip: 2px;
+    text-decoration-style:solid;
+    border: 0px;
+    border-radius: 15px;
+    padding: 2px 5px;
+    transition: all .6s;
+}
+
+
+#cabMove {
+    z-index: 10;
+}
+
+#mainPage{
+    margin: 0% 35%;
+}
+
+.mainPageRow>td{
+    padding: 2px 0px;
+    padding-bottom: 10px;
+}
+
+
+input::placeholder{
+    color: blue;
+    font-family: fantasy;
+    opacity: 30%;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+}
+
+input:focus::placeholder{
+    color: aliceblue;
+    opacity: 40%;
+    font-size: small;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transition: all .6s;
+}
+
+
+input:hover{
+    background-color: rgb(206, 203, 203);
+    border: 2px solid rgb(157, 48, 247);
+    border-radius: 4px;
+    margin: 2px;
+    padding: 3px;
+    font-size: large;
+    transition: all .6s;
+}
+input:focus{
+    background-color: gray;
+    border: 2px solid rgb(157, 48, 247);
+    border-radius: 4px;
+    margin: 2px;
+    padding: 3px;
+    font-size: large;
+    transition: all .8s;
 }
